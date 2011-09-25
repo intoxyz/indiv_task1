@@ -23,16 +23,15 @@ SampleApp::Application.routes.draw do
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
   resources :microposts, :only => [:create, :destroy]
-#  resources :places
 
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
   
   match '/contact', :to => 'pages#contact'
-  match '/location',   :to => 'pages#place'
+  match '/places',   :to => 'pages#place'
 #  match '/help',    :to => 'pages#help'
-  match '/bbout',    :to => 'pages#about'
+#  match '/bbout',    :to => 'pages#about'
   match '/comment', :to => 'pages#comment'
 
   match '/london',   :to => 'places#london'

@@ -6,11 +6,10 @@ class PagesController < ApplicationController
   def contact
   	@title = "Who am I"
   end
-  
-  def about
-  	@title = "About"
-  	@pic = Places.find(2)
-  end
+
+#  def about
+#  	@title = "About"
+#  end
   
   def help
   	@title = "Help"

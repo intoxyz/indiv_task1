@@ -6,31 +6,31 @@ class PlacesController < ApplicationController
 
   def paris
     @title = "Paris"
-    @pic = Places.find(6)
+    @pic = Places.find(3)
   end
   
   def swiss
     @title = "Swiss"
-    @pic = Places.find(8)
+    @pic = Places.find(5)
   end
   
   def seoul
     @title = "Seoul"
-    @pic = Places.find(10)
+    @pic = Places.find(7)
   end
   
   def us
     @title = "U.S.A"
-    @pic = Places.find(12)
+    @pic = Places.find(9)
   end
   
   def hk
     @title = "Hong Kong"
-    @pic = Places.find(14)
+    @pic = Places.find(11)
   end
 
   def jam
     @title = "Jamaica"
-    @pic = Places.find(16)
+    @pic = Places.find(12)
   end
 end
