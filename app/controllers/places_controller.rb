@@ -31,6 +31,6 @@ class PlacesController < ApplicationController
 
   def jam
     @title = "Jamaica"
-    @pic = Places.find(12)
+    @pic = Places.find(13)
   end
 end
