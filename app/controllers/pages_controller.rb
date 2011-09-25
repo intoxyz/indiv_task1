@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   
   def about
   	@title = "About"
+  	@pic = Places.find(2)
   end
   
   def help
