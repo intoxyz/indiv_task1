@@ -11,6 +11,7 @@ SampleApp::Application.routes.draw do
 
   get "pages/comment"
 
+  get "places/new"
   get "places/london"
   get "places/paris"
   get "places/swiss"
