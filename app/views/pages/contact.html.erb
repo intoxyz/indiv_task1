@@ -2,9 +2,109 @@
 <html>
 	<% pic = image_tag("source_pic/pppage.jpg", :alt => "Place page") %>
     <%= link_to pic, comment_path %>
-    <BR>
-    <pre><p align="center"> <Font face = "courier new", size = '6', color=#9ab>Wookjong Kwak</pre></font>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!--    <pre><p align="center"> <Font face = "courier new", size = '6', color=#9ab>Wookjong Kwak</pre></font>
 
     <pre><p align="center"><Font face = "courier new", size = '2', color=#666666>wkwak@andrew.cmu.edu </pre></Font></p>
 <br>
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script type="text/javascript" src="/javascripts/scroll.js"></script>
+</head>
+
+<body>
+
+<style type="text/css">
+#Goods_Box			{float:left;width:600px;}
+#Goods_Box .Prev_Btn	{ float:left; margin:0px 0px 0px 20px; }
+#Goods_Box .Next_Btn	{ float:left; margin:0px}
+#Goods_Scroll		{ float:left; margin:0px 0px 0px 5px; position:relative; overflow:hidden; }
+#Goods_Scroll ol	{ padding:0px; list-style:none; }
+#Goods_Scroll ol li	{ position:absolute; width:110px; }
+.Goods_Img			{ margin:0px 0px; }
+
+</style>
+<div id="Goods_Box">
+	<div class="Prev_Btn"><a href="javascript:GScroll._prevBtn();" onFocus="this.blur();"><img src="/images/bt_pl.gif" border="0"></a></div>
+	<div id="Goods_Scroll">
+		<ol>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/uk1.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/uk2.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/fr1.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/fr2.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/sw1.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/sw2.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/krinsa1.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/krinsa2.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/hk1.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/hk2.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/usdc.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/usbos.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/jam.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/tk1.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+<!--			<li>
+				<div class="Goods_Img"><a href="#"><img src="./public/images/source_pic/tk2.jpg" width="80" height="80" border="0"></a></div>
+			</li>
+-->
+			<li>
+				<div class="Goods_Img"><a href="#"><img src="/images/source_pic/uscg.jpg" width="100" height="80" border="0"></a></div>
+			</li>
+		</ol>
+	</div>
+	<div class="Next_Btn"><a href="javascript:GScroll._nextBtn();" onFocus="this.blur();"><img src="/images/bt_pr.gif" border="0"></a></div>
+</div>
+<script type="text/javascript">
+var GScroll = new GoodsScroll;
+
+GScroll.Name = "GScroll";
+GScroll.GoodsName = "Goods_Scroll";
+GScroll.Speed = 10;
+GScroll.LiBox_Num = 1;										// 한번에 스크롤할 상품 갯수
+GScroll.LiBox_HiddenNum = 5;								// 한번에 노출할 상품 갯수
+
+GScroll.GoodsSetting();										// 초기값
+GScroll.DivSize();											// 노출될 상품의 넓이 높이값
+GScroll.GoodlsArrange();									// 상품 순서대로 진열하기
+
+GScroll.GoodsSetTime = setTimeout(GScroll.Name + ".doMove('next')",3000);
+</script>
+
+</body>
+    <br>
+    <br>
+    <br>
+    <br>
 </html>
