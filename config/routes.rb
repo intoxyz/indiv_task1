@@ -42,6 +42,7 @@ SampleApp::Application.routes.draw do
   match '/hongkong',   :to => 'places#hk'
   match '/others',   :to => 'places#jam'
 
+
 	root :to => 'pages#home'
   
   

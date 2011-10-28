@@ -33,4 +33,10 @@ class PlacesController < ApplicationController
     @title = "Jamaica"
     @pic = Places.find(13)
   end
+
+    def new
+    @title = "new"
+    @pic = Places.find(13)
+    render :layout => false
+  end
 end
