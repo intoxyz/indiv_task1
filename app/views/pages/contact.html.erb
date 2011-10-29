@@ -9,90 +9,81 @@
 #Goods_Scroll ol	{ padding:0px; list-style:none; }
 #Goods_Scroll ol li	{ position:absolute; width:110px; }
 .Goods_Img			{ margin:0px 0px; }
-#nametag {text-align:center; font-family:Courier New ; font-size: 14.5px ; color: #9ab}
-#ajaxshow {text-align:center; font-family:Courier New ; font-size: 14.5px ; color: #9ab}
+#ajaxshow {text-align:center; font-family:Courier New ; font-size: 14.5px ; color: #666666}
+
 </style>
-    <%= javascript_include_tag 'jquery-1.3','jquery.easing.1.3','application','scroll'%>
+    <%= javascript_include_tag 'jquery-1.3','application_test','scroll'%>
 	<% pic = image_tag("source_pic/pppage.jpg", :alt => "Place page") %>
     <%= link_to pic, comment_path %>
     <br>
     <br>
-    <div id ="nametag"><a href="#">Wookjong Kwak</a></div>
-    <div id ="ajaxshow"></div>
+    <div id ="ajaxshow"><a href="#">Every Photos on the Webpage are taken by Wookjong Kwak</a></div>
     <br>
-
-
-<!--    <pre><p align="center"> <Font face = "courier new", size = '6', color=#9ab>Wookjong Kwak</pre></font>
-
-    <pre><p align="center"><Font face = "courier new", size = '2', color=#666666>wkwak@andrew.cmu.edu </pre></Font></p>
-<br>
--->
-
-
 
 <div id="Goods_Box">
 	<div class="Prev_Btn"><a href="javascript:GScroll._prevBtn();" onFocus="this.blur();"><img src="/images/bt_pl.gif" border="0"></a></div>
 	<div id="Goods_Scroll">
 		<ol>
 			<li>
-				<div class="Goods_Img" id ="pic1"><a href="#"><img src="/images/source_pic/uk1.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="1"><a href="#"><img src="/images/source_pic/uk1.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic2"><a href="#"><img src="/images/source_pic/uk2.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="2"><a href="#"><img src="/images/source_pic/uk2.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic3"><a href="#"><img src="/images/source_pic/fr1.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="3"><a href="#"><img src="/images/source_pic/fr1.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic4"><a href="#"><img src="/images/source_pic/fr2.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="4"><a href="#"><img src="/images/source_pic/fr2.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic5"><a href="#"><img src="/images/source_pic/sw1.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="5"><a href="#"><img src="/images/source_pic/sw1.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic6"><a href="#"><img src="/images/source_pic/sw2.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="6"><a href="#"><img src="/images/source_pic/sw2.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic7"><a href="#"><img src="/images/source_pic/krinsa1.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="7"><a href="#"><img src="/images/source_pic/krinsa1.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img"  id ="pic8"><a href="#"><img src="/images/source_pic/krinsa2.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img"  id ="8"><a href="#"><img src="/images/source_pic/krinsa2.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic9"><a href="#"><img src="/images/source_pic/hk1.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="9"><a href="#"><img src="/images/source_pic/hk1.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic10"><a href="#"><img src="/images/source_pic/hk2.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="10"><a href="#"><img src="/images/source_pic/hk2.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic11"><a href="#"><img src="/images/source_pic/usdc.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="11"><a href="#"><img src="/images/source_pic/usdc.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic12"><a href="#"><img src="/images/source_pic/usbos.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="12"><a href="#"><img src="/images/source_pic/usbos.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic13"><a href="#"><img src="/images/source_pic/jam.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="13"><a href="#"><img src="/images/source_pic/jam.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic14"><a href="#"><img src="/images/source_pic/tk1.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="14"><a href="#"><img src="/images/source_pic/tk1.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic15"><a href="#"><img src="/images/source_pic/tk2.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="15"><a href="#"><img src="/images/source_pic/tk2.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 			<li>
-				<div class="Goods_Img" id ="pic16"><a href="#"><img src="/images/source_pic/uscg.jpg" width="100" height="80" border="0"></a></div>
+				<div class="Goods_Img" id ="16"><a href="#"><img src="/images/source_pic/uscg.jpg" width="100" height="80" border="0"></a></div>
 			</li>
 		</ol>
 	</div>
 	<div class="Next_Btn"><a href="javascript:GScroll._nextBtn();" onFocus="this.blur();"><img src="/images/bt_pr.gif" border="0"></a></div>
 </div>
+
 <script type="text/javascript">
 var GScroll = new GoodsScroll;
 
 GScroll.Name = "GScroll";
 GScroll.GoodsName = "Goods_Scroll";
 GScroll.Speed = 10;
-GScroll.LiBox_Num = 1;										// 한번에 스크롤할 상품 갯수
+GScroll.LiBox_Num = 4;										// 한번에 스크롤할 상품 갯수
 GScroll.LiBox_HiddenNum = 5;								// 한번에 노출할 상품 갯수
 
 GScroll.GoodsSetting();										// 초기값
@@ -108,3 +99,5 @@ GScroll.GoodsSetTime = setTimeout(GScroll.Name + ".doMove('next')",3000);
     <br>
     <br>
 </html>
+
+<!--//Open Source Browsing img script from cleanup.tistory.com   -->

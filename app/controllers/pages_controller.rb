@@ -6,10 +6,10 @@ class PagesController < ApplicationController
   def contact
   	@title = "Who am I"
 #    @images = Places.find(1)
-#    respond_to do |format|
-#    format.html
-#    format.js
-#  end
+#    respond_to |format|
+#        format.html
+#        format.xml
+#    end
   end
 
 #  def about

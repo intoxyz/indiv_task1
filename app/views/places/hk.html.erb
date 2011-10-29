@@ -3,8 +3,8 @@
   <% pic = image_tag("source_pic/hk1.jpg", :alt => "Place page") %>
   <%= link_to pic, usa_path %>
 
-
-     <p> <Font color="666666", Font face ="courier new">
-       <pre> <%= @pic.what %>, <%= @pic.city %>, <%= @pic.year %></pre></Font>
-     </p>
+  <%= render 'form' %>
+     <!--<p> <Font color="666666", Font face ="courier new">
+       <pre> <%#= @pic.what %>, <%#= @pic.city %>, <%#= @pic.year %></pre></Font>
+     </p>-->
 </html>

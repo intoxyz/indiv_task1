@@ -2,17 +2,23 @@ $(document).ready(function(){
 
     alert("Navigate and Click on Pictures");
 
-    $("#nametag").click(function(event){
+/*    $("#nametag").click(function(event){
 
         alert("wkwak@andrew.cmu.edu");
         event.preventDefault();
         $(this).hide("slow");
         $(".show").hide("4000");
     });
+*/
 
     //When mouse rolls over
     $("#Goods_Scroll").mouseover(function(){
         //alert("View Detailed Image");
+        callAjax();
+    });
+
+    function callAjax(){
+
         $.ajax({
                 type: "GET",
                 url: "./places/new.html",
@@ -21,17 +27,26 @@ $(document).ready(function(){
                 $("#ajaxshow").html(data);
                 //alert("success?");
                 },
-                error: function (XMLHttpRequest, status, errorThrown) {
-                alert('ajax failure:' + status + ' error: ' + errorThrown);
+                error: function () {
+                alert('ajax failure:');
                 }
         });
-    });
-
-    /*
-    //When mouse is removed
-    $("Goods_Img").mouseout(function(){
-        $(this).stop().animate({height:'40px'},{queue:false, duration:600, easing: 'easeOutBounce'})
-    });
-    */
+/*
+        var idcheck = $(".Goods_Img").load();
+        $("div.Goods_Img").text("parameter:"+idcheck);
+        $.ajax({
+                type: "POST",
+                url: "./places/new.html",
+                data: idcheck,
+                success: function (data) {
+                $("#ajaxshow").html(data);
+                alert("success?");
+                },
+                error: function () {
+                alert('ajax failure:');
+                }
+        });
+*/
+    }
 
 });

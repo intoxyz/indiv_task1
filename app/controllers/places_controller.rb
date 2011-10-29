@@ -34,9 +34,24 @@ class PlacesController < ApplicationController
     @pic = Places.find(13)
   end
 
-    def new
+  def new
     @title = "new"
-    @pic = Places.find(13)
+    @pic1 = Places.find(1)
+    @pic2 = Places.find(2)
+    @pic3 = Places.find(3)
+    @pic4 = Places.find(4)
+    @pic5 = Places.find(5)
+    @pic6 = Places.find(6)
+    @pic7 = Places.find(7)
+    @pic8 = Places.find(8)
+    @pic9 = Places.find(9)
+    @pic10 = Places.find(10)
+    @pic11 = Places.find(11)
+    @pic12 = Places.find(12)
+    @pic13 = Places.find(13)
+    @pic14 = Places.find(14)
+    @pic15 = Places.find(15)
+    @pic16 = Places.find(16)
     render :layout => false
   end
 end

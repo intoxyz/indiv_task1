@@ -4,8 +4,8 @@ function GoodsScroll() {
 	this.Speed = 70;
 	this.GoodsSetTime = null;
 	
-	this.LiBox_Num = 1;
-	this.LiBox_HiddenNum = 6;
+	this.LiBox_Num = 4;
+	this.LiBox_HiddenNum = 5;
 	
 	this.GoodsSetting();
 	this.DivSize();
