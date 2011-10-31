@@ -5,11 +5,11 @@ class PagesController < ApplicationController
 
   def contact
   	@title = "Who am I"
-#    @images = Places.find(1)
-#    respond_to |format|
-#        format.html
-#        format.xml
-#    end
+    @images = Places.find(:all)
+    respond_to do |format|
+        format.html
+        format.xml {render:xml => @images}
+    end
   end
 
 #  def about

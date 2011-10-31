@@ -14,6 +14,11 @@ class UsersController < ApplicationController
   def index
     @title = "All users"
     @users = User.paginate(:page => params[:page])
+
+    respond_to do |format|
+        format.html
+        format.xml {render:xml=> @users}
+    end
   end
   def create
     @user = User.new(params[:user])
